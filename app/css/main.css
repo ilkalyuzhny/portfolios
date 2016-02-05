@@ -1,0 +1,296 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background: url(../images/bg2.png) repeat;
+  font: normal 1em 'fira_sanslight';
+  color: #4a545d;
+}
+
+/**footer vniz*/
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  min-width: 970px;
+  height: auto!important;
+  /*overflow: hidden;*/
+}
+.wrapper:after {
+  content: "";
+  height: 80px;
+  display: block;
+}
+.page-footer {
+  min-width: 970px;
+  height: 80px;
+  margin-top: -60px;
+}
+/**footer vniz prikreplen*/
+
+/**header nachalo*/
+.container-big {
+  max-width: 1200px;
+  min-width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.headers{
+  height: 120px;
+  background: url(../images/bg_head2.png) bottom center repeat-x;
+  position: relative;
+  margin-bottom: 39px;
+}
+.headers .header-logo {
+  position: relative;
+  top: 40px;
+  left: 0;
+}
+.headers .header-logo-text {
+  position: relative;
+  left: -9999px;
+}
+.soc-buttons {
+  float: right;
+}
+.socials {
+  display: inline-block;
+}
+.socials-link {
+  display: block;
+  width: 47px;
+	height: 47px;
+	margin-left: 20px;
+  margin-top: 20px;
+}
+.vk {
+  background-image: url(../images/soc_ikonset2.png);
+  background-position: -5px 0px;
+  text-indent: -9999px;
+}
+.tw {
+  background-image: url(../images/soc_ikonset2.png);
+  background-position: -76px -94px;
+  text-indent: -9999px;
+}
+.fb {
+  background-image: url(../images/soc_ikonset2.png);
+  background-position: -147px -235px;
+  text-indent: -9999px;
+}
+.gt {
+  background-image: url(../images/soc_ikonset2.png);
+  background-position: -218px -329px;
+  text-indent: -9999px;
+}
+.vk:hover {
+    background-image: url(../images/soc_ikonset2.png);
+    background-position: -303px 0px;
+    cursor: pointer;
+}
+.tw:hover {
+    background-image: url(../images/soc_ikonset2.png);
+    background-position: -374px -94px;
+    cursor: pointer;
+}
+.fb:hover {
+    background-image: url(../images/soc_ikonset2.png);
+    background-position: -445px -235px;
+    cursor: pointer;
+}
+.gt:hover {
+    background-image: url(../images/soc_ikonset2.png);
+    background-position: -516px -329px;
+    cursor: pointer;
+}
+/**block soc ikonok konec*/
+
+/**Saidbar*/
+.sidebar {
+  width: 250px;
+  float: left;
+}
+/**navigation menu*/
+.navigation {
+  overflow: hidden;
+  background: #eff3f7;
+  border-radius: 4px;
+  margin-bottom: 22px;
+}
+.navigation .navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navigation .navigation-item {
+  border-top: 2px solid #3ba8cd;
+  margin: 0 11px;
+}
+.navigation .navigation-item:first-child {
+  border-top: none;
+}
+/**navigation tekuchii punkt menu*/
+.navigation .navigation-item.current {
+  background: #3ba8c0;
+  margin: 0;
+  border-bottom: none;
+  padding-left: 11px;
+  margin-bottom: -2px;/**prov*/
+}
+.navigation .navigation-item.current .navigation-link {
+  color: #f9fafb;
+  font-size: 22px;
+}
+/**navigaciya tekuchii punkt menu konec*/
+.navigation .navigation-link {
+  font-family: 'fira_sansbook';
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  color: #959aa8;
+  margin-left: 16px;
+  padding: 20px 0px;
+}
+.navigation .navigation-link:hover {
+  color: #3ba8c0;
+}
+/**navigation-menu konec*/
+/**contacts - nachalo*/
+.contacts {
+  width: 250px;
+  float: left;
+}
+.infa {
+  font-family: 'fira_sanslight';
+  font-size: 20px;
+  background: #3ba8c0;
+  color: #f9fafb;
+  padding: 7px 20px 2px 20px;
+  margin: 0;
+  border-radius: 4px 4px 0px 0px;
+}
+.contact-list {
+  padding: 0;
+  margin: 0;
+}
+.contact-list .adress-item {
+  height: 25px;
+  padding: 8px 0px 8px 40px;
+  list-style-type: none;
+}
+.email {
+  background: #41b9d4;
+}
+.adress-email {
+  width: 22px;
+  height: 18px;
+  background-position: -5px -5px;
+}
+.addres-ikon {
+  background-image: url(../images/addres_ikonset.png);
+  background-repeat: no-repeat;
+  background-position: 0px 1px;
+  display: inline-block;
+  text-indent: -9999px;
+  padding-left: 18px;
+  position: relative;
+  top: 15%;
+}
+.mails {
+  font-family: "fira_sansbook";
+  color: #fff;
+}
+.adress-phone {
+  width: 19px;
+  height: 20px;
+  background-position: 0px -39px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.phone {
+  font-family: "fira_sansbook";
+  color: #fff;
+  background: #48cbe8;
+}
+.adress-skype {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -79px;
+}
+.skype {
+  font-family: "fira_sansbook";
+  color: #fff;
+  background: #51daf8;
+  border-radius: 0 0 4px 4px;
+}
+/**contacts - konec*/
+/**glavnaya oblast*/
+.variable-content {
+  width: 650px;
+  float: right;
+}
+/**footer*/
+.page-footer {
+  background: url(../images/bg_footer2.png);
+  font-family: 'fira_sanslight';
+  color: #4a545d;
+  height: 80px;
+}
+.page-footer .container {
+  padding-top:26px;
+  position: relative;
+}
+.page-footer .copyright {
+  margin: 0 180px;
+  padding-top: 7px;
+  text-align: center;
+  font-size: 13px;
+}
+/**vhod v admin-panel*/
+.page-footer .lock {
+  position: absolute;
+  top: 27px;
+  left: 34px;
+}
+.lock .lock-inner {
+  display: block;
+  height: 40px;
+  font-family: 'fira_sansbook';
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a545d;
+  text-decoration: none;
+  background: url(../images/lock-zak2.png) no-repeat;
+  padding-left: 24px;
+}
+.lock .lock-inner:hover {
+  text-decoration: underline;
+  background: url(../images/lock-otk2.png) no-repeat;
+}
+/**obchie klasses*/
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+/**clearfix*/
+.container:before, .clearfix:before,
+.container:after, .clearfix:after {
+  content: " "; /**1*/
+  display: block; /**2*/
+}
+.container:after, .clearfix:after {
+  clear: both;
+}
+/**clearfix - konec*/
+/**obchie klasses - konec*/

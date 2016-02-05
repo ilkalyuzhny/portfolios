@@ -1,0 +1,149 @@
+/**Styles on all sections*/
+.aboutbox {
+  min-width: 650px;
+  background: #eff3f7;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  float: right;
+}
+.aboutbox-header {
+  display: block;
+  width: 320px;
+  margin-top: 0;
+  padding: 14px 0px 13px 21px;
+  border-bottom: 2px solid;
+  border-radius: 4px 4px 0px 0px;
+  font-family: 'fira_sanslight';
+  font-size: 25px;
+  color: #3ba8c0;
+  background-color: #eff3f7;
+  letter-spacing: 0.025em;
+}
+.aboutbox-header-min {
+  display: block;
+  width: 186px;
+  margin-top: 0;
+  padding: 12px 0px 13px 21px;/*perv zhach 14px*/
+  border-bottom: 2px solid;
+  border-radius: 4px 4px 0px 0px;
+  font-family: 'fira_sanslight';
+  font-size: 25px;
+  color: #3ba8c0;
+  background-color: #eff3f7;
+  letter-spacing: 0.025em;
+}
+.aboutbox-body {
+  padding-bottom: 40px;
+}
+/**portret*/
+.image-wrap {
+  float: left;
+  margin-left: 46px;
+  margin-top: 1px;
+}
+.ava {
+  width: 140px; /*150px*/
+  height: 140px; /*150px*/
+  border-radius: 50% 50%;
+  overflow: hidden;
+  border: 4px solid #34a8be;
+}
+/**spisok anketniah dannix - konec*/
+.image-wrap {
+  float: left;
+  width: 176px; /*194px*/
+  position: relative;
+  margin-left: 54px; /*46px*/
+  margin-top: 13px;
+}
+.info_block {
+  line-height: 19px; /*16px*/
+  margin: 2px -2px 0px 230px;
+  font-family: 'fira_sansbook';
+  font-size: 14px;
+  letter-spacing: 0.035em;
+}
+.info_text {
+  font-family: 'fira_sansmedium';
+  font-size: 16px;
+}
+.naviki {
+  width: 237px;
+  position: relative;;
+  float: right;
+  display: block;
+  margin-top: -28px; /*26px*/
+  right: 12px; /*24px*/
+}
+.imgkluch {
+  margin-right: 5px;
+  margin-bottom: 1px; /*5px*/
+}
+.optjobs {
+  padding-bottom: 46px;
+}
+.portf-1{
+	line-height:21px;
+	padding-left:126px; /*130px*/
+	padding-top:1px; /*21px*/
+  padding-bottom: 0px;
+	text-align:left;
+	background-image: url("../images/optjob.png");
+	background-repeat:no-repeat;
+	background-position:56px 2px; /*60px 29px*/
+	font-size: 15px;
+	color: #4a545d;
+}
+.portf-2{
+	line-height:18px;
+	padding-left:126px; /*130px*/
+	padding-top:21px;
+  padding-bottom: 0px;
+	text-align:left;
+	background-image: url("../images/optjob.png");
+	background-repeat:no-repeat;
+	background-position:56px 22px; /*60px 29px*/
+	font-size: 15px;
+	color: #4a545d;
+}
+.big_text {
+  font-family: 'fira_sansbook';
+  font-size: 17px;
+}
+.small_text {
+  font-family: 'fira_sanslight';
+  font-size: 15px;
+}
+.obrazovanie{
+	display: block;
+}
+.obrazovan{
+	line-height:19px; /*18px*/
+	padding-left:126px; /*130px*/
+	padding-top:1px; /*27px*/
+	text-align:left;
+	background-image: url("../images/obrazov.png");
+	background-repeat:no-repeat;
+	background-position:54px 4px; /*61px 35px*/
+	color: #4a545d;
+}
+.kurs-1{
+	line-height:18px;
+	padding-left:126px; /*130px*/
+	padding-top:22px; /*24px*/
+	text-align:left;
+	background-image: url("../images/kurs.png");
+	background-repeat:no-repeat;
+	background-position:62px 24px; /*70px 28px*/
+	color: #4a545d;
+}
+.kurs-2{
+	line-height:18px;
+	padding-left:126px; /*130px*/
+	padding-top:24px; /*27px*/
+	text-align:left;
+	background-image: url("../images/kurs.png");
+	background-repeat:no-repeat;
+	background-position:62px 26px; /*70px 28px*/
+	color: #4a545d;
+}

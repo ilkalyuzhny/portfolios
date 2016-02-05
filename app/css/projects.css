@@ -1,0 +1,131 @@
+
+.aboutbox {
+  min-width: 650px;
+  background: #eff3f7;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  float: right;
+}
+.aboutbox-header-min {
+  display: block;
+  width: 178px;
+  margin-top: 0;
+  padding: 14px 0px 13px 21px; /*perv zhach 16px*/
+  border-bottom: 2px solid;
+  border-radius: 4px 4px 0px 0px;
+  font-family: 'fira_sanslight';
+  font-size: 25px;
+  color: #3ba8c0;
+  background-color: #eff3f7;
+  letter-spacing: 0.025em;
+}
+.aboutbox-body {
+  padding-bottom: 40px;
+}
+
+.my-projects {
+  padding: 0;
+  margin: 27px 0px 0px 0px;
+  font-size: 0px;
+}
+.proj {
+  display: inline-block;
+  width: 183px;
+  vertical-align: top;
+  margin: 0px 17px 34px 16px;
+  text-align: center;
+}
+.proj {
+    position: relative;
+}
+.block-images {
+  border: 2px solid #35a8bf;
+  border-radius: 5px;
+  height: 128px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.proj-image {
+  box-sizing: border-box;
+}
+
+.job-project {
+position: absolute;
+width: 100%;
+top: 55px;
+text-align: center;
+transform: scale(0);
+-webkit-transform: scale(0);
+-moz-transform: scale(0);
+-ms-transform: scale(0);
+-o-transform: scale(0);
+transition: all .6s ease-in-out;
+-webkit-transition: all .6s ease-in-out;
+-moz-transition: all .6s ease-in-out;
+-o-transition: all .6s ease-in-out;
+}
+.proj:hover .job-project {
+transform: scale(1);
+-webkit-transform: scale(1);
+-moz-transform: scale(1);
+-ms-transform: scale(1);
+-o-transform: scale(1);
+}
+.proj .zoom-link {
+  color: white;
+  font-size: 12px;
+  border: 2px solid #eff3f7;
+  padding: 0px 4px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.proj:hover .proj-image {
+  -moz-opacity: 0.35;
+  opacity:.35;
+  filter: alpha(opacity=35);
+}
+.proj:hover .block-images {
+	background-color: #1e6389;
+}
+.ssilka-on-proj {
+  color:#3ba8c0;
+  font-size: 13px;
+	font-family: 'fira_sanslight_italic';
+	font-weight: normal;
+	font-style: normal;
+}
+.proj-information {
+  color: #606972;
+	font-size: 15px;
+  font-family: 'fira_sanslight';
+	line-height: 1.2;
+	margin: 5px 0;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.proj .dobavit-project{
+	position: relative;
+	display: block;
+	width: 182;
+	height: 128px;
+	border-radius: 5px;
+	border:1px #35a8bf dashed;
+	background-color: #edf8fc;
+}
+.dobavit-project-image{
+	position: absolute;
+	top: 35px;
+	left: 75px;
+}
+.dobavit-project-button {
+	position: absolute;
+	top: 75px;
+	left: 43px;
+  color: #35a8bf;
+  font-size: 13px;
+	font-family: 'fira_sanslight';
+	font-weight: normal;
+	font-style: normal;
+}
