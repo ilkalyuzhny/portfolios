@@ -4,7 +4,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -300px 0 0 -250px; /* отступы равны
+  margin: -270px 0 0 -290px; /* отступы равны
   половинным размера формы */
   z-index: 9999; /* чтобы форма была поверх
   всех элементов страницы */
@@ -18,11 +18,12 @@
 	margin: 0px;
   background-color: #48cbe8;
 	color: #ffffff;
-  font-size: 30px;
+  font-size: 36px;
 	font-family: 'fira_sansbook';
 	font-weight: normal;
   font-style: normal;
   text-align: center;
+  letter-spacing: 0.02em;
 }
 .aboutbox-header-obrat:after {
 	position: absolute;
@@ -33,33 +34,19 @@
 	height: 19px;
 	background-color: #67dffa;
 }
-.forma-obrat {
-	padding: 58px 120px 200px 120px;
+.forma-autorizat {
+	padding: 20px 78px 200px 77px;
+  /*padding: 58px 120px 200px 120px;*/
 }
 .block-textarea {
 	color:#67dffa;
-	border-radius: 3px;
+	border-radius: 4px;
 	border:1px solid #67dffa;
 	padding-left: 10px;
   font-size: 13px;
 	font-family: 'fira_sanslight';
   outline: none;
 }
-/*
-.textarea.message {
-  width: 380px;
-	height: 163px;
-	color:#67dffa;
-  font-size: 13px;
-	font-family: 'fira_sanslight';
-  border:1px solid #67dffa;
-	border-radius: 4px;
-	padding: 10px;
-	margin-bottom: 10px;
-  resize: none;
-  outline: none;
-}
-*/
 .block-textarea.name {
 	width: 422px; /*180px*/
 	height: 60px; /*39px*/
@@ -68,59 +55,24 @@
 	width: 422px; /*180px*/
 	height: 60px; /*39px*/
 }
-/*
-.block-textarea.code {
-	width: 180px;
-	height: 30px;
-	margin-top: 20px;
-}
-*/
 .label {
 	color: #a9abbe;
-	font-size: 19px;
+	font-size: 28px;
   line-height: 1.4;
 	font-family: 'fira_sanslight';
+  letter-spacing: 0.055em;
 }
 .label.message {
 	font-size: 17px;
 }
 .block-name {
-/*	width: 200px;*/
-/*  display: inline-block;*/
-/*	float: left;*/
 	margin-bottom: 11px;
   text-align: center;
 }
 .block-emails {
-/*	width: 200px;*/
-/*	float: right;*/
-	margin-bottom: 15px;
-/*	margin-right: 0px;*/
+	margin-bottom: 30px;
   text-align: center;
 }
-/*
-.block-kapcha {
-	margin-bottom: 20px;
-}
-.kapcha {
-  width: 180px;
-	height: 78px;
-	position: relative;
-	margin-right: 15px;
-	margin-bottom: 25px;
-  padding-left: 10px;
-  float: left;
-  color:#67dffa;
-  background-color: #ffffff;
-  border:1px solid #67dffa;
-	border-radius: 4px;
-}
-.kapcha-image {
-	position: absolute;
-	top: 20px;
-	left: 20px;
-}
-*/
 .block-code {
 	float: right;
 }
@@ -216,7 +168,7 @@ input:focus:-ms-input-placeholder {
   transition: opacity 0.3s ease;
 }
 .button {
-	padding: 0px 20px;
+	padding: 0px 33px;
 	color: #ffffff;
 	font-size: 19px;
 	font-family: 'fira_sansbook';
@@ -224,33 +176,19 @@ input:focus:-ms-input-placeholder {
   outline: none;
 }
 .submit-block {
-	float: left;
+  text-align: center;
 }
-.reset-block {
-	float: right;
-}
-.button.otpravka {
-	margin-right: 127px;
+.button.vhodilka {
+	margin-right: 0px; /*127px*/
+  margin-bottom: 10px;
 	border: 1px solid #48cbe8;
 	border-bottom: 2px solid #3ba8c0;
 	background-color: #48cbe8;
 }
-.button.clear {
-	border: 1px solid #849db5;
-	border-bottom: 2px solid #687b8f;
-	background-color: #849db5;
-}
-.button.otpravka:active {
+.button.vhodilka:active {
 	border-bottom-color:transparent;
     border-top: 2px solid #849db5;
 }
-.button.clear:active {
-	border-bottom-color:transparent;
-	border-top: 2px solid #687b8f;
-}
-.button.otpravka:hover {
-	border-bottom-color:transparent;
-}
-.button.clear:hover {
+.button.vhodilka:hover {
 	border-bottom-color:transparent;
 }
