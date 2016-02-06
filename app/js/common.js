@@ -8,7 +8,7 @@ $(document).ready(function() {
 			url: "php/mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			alert("Спасибо! Ваша заявка будет рассмотрена в ближайшее время!");
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
@@ -18,3 +18,4 @@ $(document).ready(function() {
 	});
 
 });
+//setTimeout('location.replace("http://kalyuzhny.ru.xsph.ru/index.html")', 5000);

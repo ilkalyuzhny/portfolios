@@ -28,7 +28,7 @@
 	padding: 58px 120px 200px 120px;
 }
 .block-textarea {
-	color:#67dffa;
+	color:#148DA8;
 	border-radius: 3px;
 	border:1px solid #67dffa;
 	padding-left: 10px;
@@ -39,7 +39,7 @@
 .textarea.message {
   width: 380px;
 	height: 163px;
-	color:#67dffa;
+	color:#148DA8;
   font-size: 13px;
 	font-family: 'fira_sanslight';
   border:1px solid #67dffa;
@@ -108,7 +108,7 @@
 	float: right;
 }
 input::-webkit-input-placeholder {
-	color: #67dffa;
+	color: #67dffa; /*67dffa*/
 	font-size: 13px;
 	font-family: 'fira_sanslight';
 }
