@@ -83,6 +83,38 @@
 					  <form action="" name="" class="forma-obrat">
 						  <div class="block-name">
 							  <label for="name" class="label">Имя</label>
+                <input type="hidden" name="project_name" value="Название сайта">
+					  		<input type="text" name="Name" class="block-textarea name" placeholder="Как к Вам обращаться">
+              </div>
+						  <div class="block-emails">
+							  <label for="email" class="label">E-mail</label>
+                <input type="hidden" name="admin_email" value="dangerousspec@inbox.ru">
+							  <input type="email"name="E-mail" class="block-textarea emails" placeholder="Куда мне писать">
+              </div>
+						  <label for="message" class="label">Сообщение</label>
+              <input type="hidden" name="form_subject" value="Портфолио kalyuzhny.ru - Заявка с формы связи">
+						  <textarea name="text" name="Phone" cols="30" rows="10" placeholder="Кратко в чем суть" class="textarea message"></textarea>
+						  <div class="block-kapcha">
+							  <label for="code" class="label message">Введите код, указанный на картинке</label>
+							    <div class="kapcha">
+								    <img src="images/kapcha.png" alt="captcha" class="kapcha-image">
+                  </div>
+							    <div class="block-code">
+							      <input type="text" id="code-kapcha" class="block-textarea code" placeholder="Введите код">
+							    </div>
+							</div>
+							<div class="buttons">
+							  <div class="submit-block">
+						      <button type="submit" class="button otpravka">Отправить</button>
+						    </div>
+						    <div class="reset-block">
+						      <button type="reset" class="button clear">Очистить</button>
+						    </div>
+						  </div>
+					  </form>
+            <!--form action="" name="" class="forma-obrat">
+						  <div class="block-name">
+							  <label for="name" class="label">Имя</label>
 					  		<input type="text" id="name" class="block-textarea name" placeholder="Как к Вам обращаться">
               </div>
 						  <div class="block-emails">
@@ -108,7 +140,7 @@
 						      <button type="reset" class="button clear">Очистить</button>
 						    </div>
 						  </div>
-					  </form>
+					  </form-->
           </section>
         </div>
       </div>
@@ -127,5 +159,6 @@
 
   <script src="bower/jquery/jquery.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/common.js"></script>
 </body>
 </html>
