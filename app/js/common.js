@@ -9,10 +9,12 @@ $(document).ready(function() {
 			data: th.serialize()
 		}).done(function() {
 			alert("Спасибо! Ваша заявка будет рассмотрена в ближайшее время!");
+		//	location.replace("http://localhost/portfolios/app/index.html");
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
-			}, 1000);
+			}, 10000);
+			location.replace("http://localhost/portfolios/app/index.html");
 		});
 		return false;
 	});

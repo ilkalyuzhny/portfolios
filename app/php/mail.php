@@ -20,7 +20,7 @@ if ( $method === 'POST' ) {
 		";
 	}
 }
-} else if ( $method === 'GET' ) {
+} /*else if ( $method === 'GET' ) {
 
 	$project_name = trim($_GET["project_name"]);
 	$admin_email  = trim($_GET["admin_email"]);
@@ -36,7 +36,7 @@ if ( $method === 'POST' ) {
 		";
 	}
 }
-}
+}*/
 
 $message = "<table style='width: 100%;'>$message</table>";
 
