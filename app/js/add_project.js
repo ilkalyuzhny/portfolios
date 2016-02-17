@@ -9,6 +9,7 @@ var myModule = (function () {
   //  $('.dobavit-project').on('click', _showModal); //открыть модальное окно
       $('#dobavit-new-project').on('click', _showModal); //открыть модальное окно
   //    $('#add-new-project').on('submit', _addProject); // добавление проекта
+      $('.b-close').on('click', _clearForm);
   };
 
   var _showModal = function (ev) {
@@ -21,6 +22,46 @@ var myModule = (function () {
     });
   };
 
+/*
+  $('#add-new-project').validate({
+    rules: {
+      projectName: {
+        required: true
+    //    projectName: true
+      },
+      projectUrl: {
+        required: true
+//        minlength: 3
+      },
+      picture: {
+        required: false
+    //    picture: true
+      },
+      projectDesc: {
+        required: true
+      }
+    },
+    messages: {
+      projectName: {
+        required: 'Вы не ввели название'
+      },
+      projectUrl: {
+        required: 'Вы не написали полностью ссылку'
+      },
+      picture: {
+        required: 'Картинка не загружена'
+      },
+      projectDesc: {
+        required: 'Описание проекта обязательно'
+      }
+    }
+  });
+*/
+/*
+  $(document).ready(function () {
+    $('#add-new-project').validate();
+  });
+  */
 /*
   var _addProject = function (ev) {
     console.log('Добавление проекта');

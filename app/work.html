@@ -31,7 +31,7 @@
       <header class="headers">
         <div class="container-big">
           <!--a class="header-logo-link"-->
-          <a class="header-logo">
+          <a href="index.html" class="header-logo">
             <img src="images/logo2.png" alt="logo" class="logo-img">
             <span class="header-logo-text">Сайт-портфолио</span>
           </a>
@@ -195,7 +195,22 @@
 
   <script src="bower/jquery/jquery.js"></script>
   <script src="bower/bPopup/jquery.bpopup.js"></script>
+  <script src="bower/jquery-validation/dist/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/add_project.js"></script>
+  <!--script>
+  $('#add-new-project').validate({
+    rules: {
+      projectName: {
+        required: true,
+        projectName: true
+      },
+      projectUrl: {
+        required: true,
+        minlength: 3
+      }
+    }
+  });
+</script-->
 </body>
 </html>
