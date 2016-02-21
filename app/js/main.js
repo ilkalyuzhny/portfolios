@@ -13,7 +13,7 @@ $(function(){
                    if($(this).attr("name")==field[i]){ //проверяем поле формы на пустоту
 
                        if(!$(this).val()){// если в поле пустое
-                           $(this).css('border', 'red 1px solid');// устанавливаем рамку красного цвета
+                           $(this).css('border', '#67dffa 1px solid');// устанавливаем рамку красного цвета
                            $(this).css('background-color', '#fad2d1');
                            error=1;// определяем индекс ошибки
 
@@ -41,3 +41,20 @@ $(function(){
 
        })
    });
+
+/*   $(document).ready(function() {
+      $('a[qtip-content]').qtip();
+    });
+*/
+/*
+  $('input[qtip-content]').qtip({
+    position: {
+      my: 'left center',
+      //положение курсора
+      alt: 'left center',
+      //положение всплывашки
+      viewport: $(window)
+      // всплывашка не вылезет за края экрана
+    }
+  });
+*/

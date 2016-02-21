@@ -12,6 +12,7 @@
   <link rel="icon" href="/favicon.ico" type="images/x-icon">
   <!--bower css-->
   <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+  <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
   <!--css-->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/autorization.css">
@@ -33,12 +34,14 @@
 					  <form action="" name="" class="forma-autorizat">
 						  <div class="block-name">
 							  <label for="login" class="label">Логин</label>
-					  		<input type="login" name="login" class="block-textarea name" placeholder="Введите логин"><!--id="login"-->
-              </div>
+                              <input type="login" name="login" class="block-textarea name" placeholder="Введите логин"><!--id="login"-->
+                              <div class="qtip">введите логин</div>
+                          </div>
 						  <div class="block-emails">
 							  <label for="password" class="label">Пароль</label>
 							  <input type="password" name="password" class="block-textarea emails" placeholder="Введите пароль"><!--id="password"-->
-              </div>
+                              <div class="qtip">введите пароль</div>
+                          </div>
 							<div class="buttons">
 							  <div class="submit-block">
 						      <button type="submit" class="button vhodilka">Войти</button>
@@ -62,6 +65,34 @@
   </footer>
 
   <script src="bower/jquery/jquery.js"></script>
+  <script src="bower/qtip2/jquery.qtip.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/autorezat.js"></script>
+
+  <script type="text/javascript">
+      $(document).ready(function(){//страница загрузилась
+          $('input').hover(function(){	//при наведении на элемент:
+              var helptext = $(this).attr('placeholder') 	//текст подсказки
+              $('.qtip').html(helptext).show();	//размещаем текст подсказки в блок тултипа и делаем его видимым
+              //далее устанавливаем тултипу значения позиции с помощью абсолютного позиционирования:
+              //позиция элемента сверху + высота элемента -> $(this).offset().top+$(this).height()
+              //позиция элемента слева -> $(this).offset().left
+              $('.qtip').offset({top:$(this).offset().top+$(this).height(),left:$(this).offset().left});
+
+          },function() {
+              $('input').qtip({
+                  position: {
+                      my: 'left center',
+                      alt: 'left center',
+                      viewport: $(window)
+                  }
+              })
+          },function(){
+              $('.qtip').hide();	//скрываем тултип);
+            });
+      });
+      //в итоге подсказка окажется ровно под элементом наведения
+  </script>
+
 </body>
 </html>

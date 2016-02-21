@@ -9,7 +9,7 @@ var myModule = (function () {
   //  $('.dobavit-project').on('click', _showModal); //открыть модальное окно
       $('#dobavit-new-project').on('click', _showModal); //открыть модальное окно
   //    $('#add-new-project').on('submit', _addProject); // добавление проекта
-      $('.b-close').on('click', _clearForm);
+  ///    $('.b-close').on('click', _clearForm);
   };
 
   var _showModal = function (ev) {
@@ -21,6 +21,19 @@ var myModule = (function () {
       transition: 'slideDown'
     });
   };
+
+  $(document).ready(function() {
+    $('input, textarea').qtip({
+        content: {
+          text: 'введите название'
+        },
+        position: {
+          my: 'left center',
+          alt: 'left center',
+          viewport: $(window)
+       }
+     })
+   });
 
 /*
   $('#add-new-project').validate({

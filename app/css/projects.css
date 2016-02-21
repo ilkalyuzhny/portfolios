@@ -394,3 +394,46 @@ input.error {
   box-sizing: border-box;
 }
 */
+
+.tooltip.name{
+    right: 413px;
+    top: 45%;
+}
+.tooltip.email{
+    right: -147px;
+    top: 40%;
+}
+.tooltip.email:before{
+    content: '';
+    position: absolute;
+    top: 28%;
+    right: 149px;
+    border: 6px solid transparent;
+    border-right: 6px solid #f97e76;
+}
+.tooltip.email:after{
+    display: none;
+}
+.tooltip.message{
+    right: 413px;
+    top: 45%;
+}
+.tooltip.code{
+    right: -144px;
+    top: 48px;
+}
+.tooltip.code:before{
+    content: '';
+    position: absolute;
+    top: 28%;
+    right: 138px;
+    border: 6px solid transparent;
+    border-right: 6px solid #f97e76;
+}
+.tooltip.code:after{
+    display: none;
+}
+.error{
+    background-color:#fad6d4;
+    border:1px solid #f97e76;
+}
