@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   // по клику формы sabmit
-  $('#form-contact').on('submit', function(e){
+  $('#add-new-project').on('submit', function(e){
     e.preventDefault();
 
 
@@ -11,7 +11,7 @@ $(document).ready(function(){
       postFormData(form, function(data){
         //console.log('sended');
         if (data.status) {
-          console.log('Заявка отправлена! Валидация пройдена!');
+          console.log('Вход выполнен! Валидация пройдена!');
         } else {
           console.log('где-то ошибка');
         }
@@ -52,7 +52,7 @@ function postFormData(form, successFunction) {
 // Валидация
 function validateThis(form){
   var validationMethods = {
-    name : function($this){
+    project : function($this){
       // проверка на непустую строку, когда в ней что-то есть
       var notEmptyField = !!$this.val(); // если $this.val() true, то if. !! - приведение к булевскому типу
 
@@ -61,7 +61,24 @@ function validateThis(form){
         $this.removeClass('error'); // если поле прошло валидацию, то класс удалим
       } else { // если пустое, то нужно указать, что провалидировалось
           $this.tooltip({ // выведем тултип
-            content: 'Вы не ввели имя',
+            content: 'введите название',
+            position: 'left'
+          });
+          $this.addClass('error'); // если поле не прошло валидацию
+      }
+
+    },
+
+    picture : function($this){
+      // проверка на непустую строку, когда в ней что-то есть
+      var notEmptyField = !!$this.val(); // если $this.val() true, то if. !! - приведение к булевскому типу
+
+      if (notEmptyField) {
+        // если не пустое поле, то ничего не делается
+        $this.removeClass('error'); // если поле прошло валидацию, то класс удалим
+      } else { // если пустое, то нужно указать, что провалидировалось
+          $this.tooltip({ // выведем тултип
+            content: 'изображение',
             position: 'left'
           });
           $this.addClass('error'); // если поле не прошло валидацию
@@ -78,24 +95,7 @@ function validateThis(form){
         $this.removeClass('error'); // если поле прошло валидацию, то класс удалим
       } else { // если пустое, то нужно указать, что провалидировалось
           $this.tooltip({ // выведем тултип
-            content: 'Вы не ввели email',
-            position: 'right'
-          });
-          $this.addClass('error'); // если поле не прошло валидацию
-      }
-
-    },
-
-    message : function($this){
-      // проверка на непустую строку, когда в ней что-то есть
-      var notEmptyField = !!$this.val(); // если $this.val() true, то if. !! - приведение к булевскому типу
-
-      if (notEmptyField) {
-        // если не пустое поле, то ничего не делается
-        $this.removeClass('error'); // если поле прошло валидацию, то класс удалим
-      } else { // если пустое, то нужно указать, что провалидировалось
-          $this.tooltip({ // выведем тултип
-            content: 'Ваш вопрос',
+            content: 'ссылка на проект',
             position: 'left'
           });
           $this.addClass('error'); // если поле не прошло валидацию
@@ -103,7 +103,7 @@ function validateThis(form){
 
     },
 
-    kapcha : function($this){
+    text : function($this){
       // проверка на непустую строку, когда в ней что-то есть
       var notEmptyField = !!$this.val(); // если $this.val() true, то if. !! - приведение к булевскому типу
 
@@ -112,8 +112,8 @@ function validateThis(form){
         $this.removeClass('error'); // если поле прошло валидацию, то класс удалим
       } else { // если пустое, то нужно указать, что провалидировалось
           $this.tooltip({ // выведем тултип
-            content: 'Вы не ввели код',
-            position: 'right'
+            content: 'описание проекта',
+            position: 'left'
           });
           $this.addClass('error'); // если поле не прошло валидацию
       }

@@ -12,13 +12,10 @@
   <link rel="icon" href="images/favicon.ico" type="images/x-icon">
   <!--bower css-->
   <link rel="stylesheet" href="bower/normalize-css/normalize.css">
-  <link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css">
   <!--css-->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/contacts.css">
   <link rel="stylesheet" href="fonts/fira.css">
-  <!--link rel="stylesheet" href="css/fonts.css"-->
-  <!--script src="bower/modernizer/modernizer.js"></script-->
 </head>
 <body>
   <!--[if lt IE 7]>
@@ -30,7 +27,6 @@
     <div class="main-content">
       <header class="headers">
         <div class="container-big">
-          <!--a class="header-logo-link"-->
           <a href="index.html" class="header-logo">
             <img src="images/logo2.png" alt="logo" class="logo-img">
             <span class="header-logo-text">Сайт-портфолио</span>
@@ -59,7 +55,7 @@
               </li>
             </ul>
           </nav>
-          <addres class="contacts">
+          <div class="contacts">
             <h2 class="infa">Контакты</h2>
             <ul class="contact-list">
               <li class="adress-item email">
@@ -75,33 +71,33 @@
                 <a class="skype" target="_blank" href="skype:gepaardic">gepaardic</a>
               </li>
             </ul>
-          </addres>
+          </div>
         </aside>
         <!--Izmenyaemi content-->
         <div class="variable-content">
           <section class="aboutbox">
             <h2 class="aboutbox-header-obrat">У вас интересный проект? Напишите мне</h2>
-					  <form action="" name="" class="forma-obrat" method="POST">
+					  <form id="form-contact" action="php/mail.php" name="" class="forma-obrat" method="POST">
 						  <div class="block-name">
 							  <label for="name" class="label">Имя</label>
                 <input type="hidden" name="project_name" value="Название сайта">
-					  		<input type="text" name="Name" class="block-textarea name" placeholder="Как к Вам обращаться">
+					  		<input id="name" type="text" name="Name" class="block-textarea name" placeholder="Как к Вам обращаться" data-vaidation="name">
               </div>
 						  <div class="block-emails">
 							  <label for="email" class="label">E-mail</label>
                 <input type="hidden" name="admin_email" value="dangerousspec@inbox.ru">
-							  <input type="email" name="E-mail" class="block-textarea emails" placeholder="Куда мне писать">
+							  <input id="email" type="email" name="E-mail" class="block-textarea emails" placeholder="Куда мне писать" data-vaidation="email">
               </div>
 						  <label for="message" class="label">Сообщение</label>
-              <input type="hidden" name="form_subject" value="Портфолио kalyuzhny.ru - Заявка с формы связи">
-						  <textarea name="Message" cols="30" rows="10" placeholder="Кратко в чем суть" class="textarea message"></textarea>
+              <input id="message" type="hidden" name="form_subject" value="Портфолио kalyuzhny.ru - Заявка с формы связи">
+						  <textarea name="Message" cols="30" rows="10" placeholder="Кратко в чем суть" class="textarea message" data-vaidation="message"></textarea>
 						  <div class="block-kapcha">
 							  <label for="code" class="label message">Введите код, указанный на картинке</label>
 							    <div class="kapcha">
 								    <img src="images/kapcha.png" alt="captcha" class="kapcha-image">
                   </div>
 							    <div class="block-code">
-							      <input type="text" id="code-kapcha" class="block-textarea code" placeholder="Введите код">
+							      <input type="text" id="code" name="kapcha" class="block-textarea code" placeholder="Введите код" data-vaidation="kapcha">
 							    </div>
 							</div>
 							<div class="buttons">
@@ -130,9 +126,8 @@
   </footer>
 
   <script src="bower/jquery/jquery.js"></script>
-  <script src="bower/qtip2/jquery.qtip.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/common.js"></script>
+  <!--script src="js/main.js"></script-->
+  <!--script src="js/common.js"></script-->
   <script src="js/contacts.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@ $(function() {
 
 $(function(){
 
-       var field = new Array("login", "password", "Name", "E-mail", "Message", "projectName", "picture", "projectUrl", "text");//поля обязательные
+       var field = new Array(/*"login", "password", *//*"Name", "E-mail", "Message"*//*, "projectName", "picture", "projectUrl", "text"*/);//поля обязательные
 
        $("form").submit(function() {// обрабатываем отправку формы
            var error=0; // индекс ошибки

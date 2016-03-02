@@ -12,13 +12,10 @@
   <link rel="icon" href="images/favicon.ico" type="images/x-icon">
   <!--bower css-->
   <link rel="stylesheet" href="bower/normalize-css/normalize.css">
-  <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
   <!--css-->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/autorization.css">
   <link rel="stylesheet" href="fonts/fira.css">
-  <!--link rel="stylesheet" href="css/fonts.css"-->
-  <!--script src="bower/modernizer/modernizer.js"></script-->
 </head>
 <body>
   <!--[if lt IE 7]>
@@ -26,21 +23,17 @@
   Пожалуйста <a href="http://browsehappy.com/">обновите</a> его</p>
   <![endif]-->
 
-  <div class="wrapper">
-        <!--Izmenyaemi content-->
-        <!--div class="variable-content"-->
+        <div class="wrapper">
           <div class="aboutbox">
             <h2 class="aboutbox-header-obrat">Авторизуйтесь</h2>
-					  <form action="" name="" class="forma-autorizat">
+					  <form id="form" action="php/autorization.php" name="" class="forma-autorizat">
 						  <div class="block-name">
 							  <label for="login" class="label">Логин</label>
-                <input type="login" name="login" class="block-textarea name" placeholder="Введите логин"><!--id="login"-->
-                <div class="qtip">введите логин</div>
+                <input id="login" type="login" name="login" class="block-textarea name" data-vaidation="text">
               </div>
 						  <div class="block-emails">
 							  <label for="password" class="label">Пароль</label>
-							  <input type="password" name="password" class="block-textarea emails" placeholder="Введите пароль"><!--id="password"-->
-                <div class="qtip">введите пароль</div>
+							  <input id="password" type="password" name="password" class="block-textarea emails" data-vaidation="password">
               </div>
 							<div class="buttons">
 							  <div class="submit-block">
@@ -49,15 +42,33 @@
 						  </div>
 					  </form>
           </div>
-        <!--/div>
-      </div>
-    </div-->
+        </div>
+
+        <!--div class="popup" id="success">
+	        <div class="popup__overlay"></div>
+	        <div class="popup__content">
+				    <div class="popup__content-inner">
+					    Ваша заявка отправлена
+				    </div>
+		        <a class="popup__close" href="#"></a>
+	        </div>
+        </div>
+
+        <div class="popup" id="error">
+	        <div class="popup__overlay"></div>
+	        <div class="popup__content">
+		        <div class="popup__content-inner">
+			       <span class="error">
+				       что то пошло не так, повторите попозже
+			       </span>
+		        </div>
+		        <a class="popup__close" href="#"></a>
+	        </div>
+        </div-->
+
   </div>
   <footer class="page-footer">
     <div class="container">
-      <!--div class="lock">
-        <a href="#" class="lock-inner"></a>
-      </div-->
       <div class="copyright">© 2015. Это мой сайт, пожалуйста не копируйте
         и не воруйте его.
       </div>
@@ -65,34 +76,7 @@
   </footer>
 
   <script src="bower/jquery/jquery.js"></script>
-  <script src="bower/qtip2/jquery.qtip.js"></script>
-  <script src="js/main.js"></script>
   <script src="js/autorezat.js"></script>
-
-  <script type="text/javascript">
-      $(document).ready(function(){//страница загрузилась
-          $('input').hover(function(){	//при наведении на элемент:
-              var helptext = $(this).attr('placeholder') 	//текст подсказки
-              $('.qtip').html(helptext).show();	//размещаем текст подсказки в блок тултипа и делаем его видимым
-              //далее устанавливаем тултипу значения позиции с помощью абсолютного позиционирования:
-              //позиция элемента сверху + высота элемента -> $(this).offset().top+$(this).height()
-              //позиция элемента слева -> $(this).offset().left
-              $('.qtip').offset({top:$(this).offset().top+$(this).height(),left:$(this).offset().left});
-
-          },function() {
-              $('input').qtip({
-                  position: {
-                      my: 'left center',
-                      alt: 'left center',
-                      viewport: $(window)
-                  }
-              })
-          },function(){
-              $('.qtip').hide();	//скрываем тултип);
-            });
-      });
-      //в итоге подсказка окажется ровно под элементом наведения
-  </script>
 
 </body>
 </html>
