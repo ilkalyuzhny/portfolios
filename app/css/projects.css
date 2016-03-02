@@ -193,7 +193,7 @@ transform: scale(1);
   height: 36px;
   outline:none;
   border-radius: 3px;
-  border:1px solid #67dffa;
+  border: 1px solid #67dffa;
   color:#67dffa;
   font-size: 13px;
   font-family: 'fira_sanslight';
@@ -245,7 +245,7 @@ transform: scale(1);
   margin-right: 10px;
   margin-bottom: 15px;
   color: #48cbe8;
-  border: 1px solid rgb(72, 203, 232);
+  border: 1px solid #67dffa;
   border-radius: 4px;
 }
 
@@ -366,6 +366,11 @@ input:focus:-ms-input-placeholder {
 }
 
 input.error {
+  background-color: #fad2d1;
+  border-color: #f97e76;
+  color: #67dffa;
+}
+textarea.error {
   background-color: #fad2d1;
   border-color: #f97e76;
   color: #67dffa;

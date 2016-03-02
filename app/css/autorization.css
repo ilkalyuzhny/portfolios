@@ -193,6 +193,12 @@ input:focus:-ms-input-placeholder {
 	border-bottom-color:transparent;
 }
 
+input.error {
+  background-color: #fad2d1;
+  border-color: #f97e76;
+  color: #67dffa;
+}
+
 /*****Tooltips style*****/
 .tooltip {
   position: absolute; /*relative*/
