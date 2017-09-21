@@ -1,19 +1,19 @@
 .aboutbox {
-  overflow: hidden;
-	position: relative;
-	width: 650px;
-	background-color: #eff3f7;
-	border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #eff3f7;
+    border-radius: 4px;
 }
 .aboutbox-header-obrat {
-  padding: 40px 60px;
-	margin: 0px;
-  background-color: #48cbe8;
-	color: #ffffff;
-  font-size: 27px;
-	font-family: 'fira_sansbook';
-	font-weight: normal;
-  font-style: normal;
+    padding: 40px 60px;
+    margin: 0px;
+    background-color: #48cbe8;
+    color: #ffffff;
+    font-size: 27px;
+    font-family: 'fira_sansbook';
+    font-weight: normal;
+    font-style: normal;
 }
 .aboutbox-header-obrat:after {
 	position: absolute;

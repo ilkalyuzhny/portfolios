@@ -30,6 +30,16 @@
         display: block;
         margin: 0 -14px 0px 0;
     }
+    
+    .proj {
+        width: 181px;
+    }
+    .aboutbox-header-obrat {
+        font-size: 26px;
+    }
+    .aboutbox-header-obrat:after {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -68,9 +78,48 @@
         width: 100%;
         float: none;
     }
+    
+    .proj {
+        margin: 15px 34px;
+    }
+    
+    .block-name {
+        width: 100%;
+        display: block;
+        float: none;
+    }
+    .block-textarea.name {
+        max-width: 100%;
+        width: 478px;
+    }
+    .block-emails {
+        width: 100%;
+        display: block;
+        float: none;
+    }
+    .block-textarea.emails {
+        max-width: 100%;
+        width: 478px;
+    }
+    .textarea.message {
+        width: 100%;
+        max-width: 478px;
+        padding: 10px 0 0 10px;
+    }
+    .kapcha {
+        float: none;
+        margin: 20px auto;
+    }
+    .block-code {
+        float: none;
+        width: 192px;
+    }
 }
 
 @media (max-width: 559px) {
+    .wrapper:after {
+        height: 150px;
+    }
     .sidebar {
         width: 100%;
     }
@@ -88,6 +137,15 @@
     }
     .navigation-link {
         text-align: center;
+    }
+    .page-footer {
+        height: 80px;
+    }
+    .page-footer .container {
+        padding-top: 15px;
+    }
+    .page-footer .lock {
+        display: none;
     }
 }
 
@@ -107,6 +165,27 @@
     }
     .socials-link {
         margin: 20px 8px;
+    }
+    .aboutbox-header-min {
+        font-size: 23px;
+    }
+    .portf-1 {
+        padding-left: 80px;
+        background-position: 22px 2px;
+    }
+    .portf-2 {
+        padding-left: 80px;
+        background-position: 22px 22px;
+    }
+    .obrazovan {
+        padding-left: 80px;
+        background-position: 14px 4px;
+    }
+    .obrazovan.practika {
+        background-position: 22px 24px;
+    }
+    .obrazovan.kurs {
+        background-position: 22px 26px;
     }
 }
 
