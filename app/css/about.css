@@ -1,43 +1,38 @@
 /**Styles on all sections*/
 .aboutbox {
-  min-width: 650px;
+  width: 100%;
   background: #eff3f7;
   border-radius: 4px;
   margin-bottom: 25px;
   float: right;
 }
+/*
 .aboutbox-header {
   display: block;
   width: 320px;
   margin-top: 0;
   padding: 14px 0px 13px 21px;
-  border-bottom: 2px solid;
-  border-radius: 4px 4px 0px 0px;
   font-family: 'fira_sanslight';
   font-size: 25px;
   color: #3ba8c0;
   background-color: #eff3f7;
   letter-spacing: 0.025em;
 }
-/*
-.aboutbox-header-min {
-  display: block;
-  width: 186px;
-  margin-top: 0;
-  padding: 12px 0px 13px 21px;
-  border-bottom: 2px solid;
-  border-radius: 4px 4px 0px 0px;
-  font-family: 'fira_sanslight';
-  font-size: 25px;
-  color: #3ba8c0;
-  background-color: #eff3f7;
-  letter-spacing: 0.025em;
+.aboutbox-header:after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid;
+    overflow: hidden;
+    padding: 6px 0;
+    margin-left: -20px;
 }
 */
 .aboutbox-header-min {
   display: inline-block;
   margin-top: 0;
-  padding: 12px 0px 13px 21px;/*perv zhach 14px*/
+  padding: 12px 0px 13px 21px;
   border-bottom: 2px solid;
   border-radius: 4px 4px 0px 0px;
   font-family: 'fira_sanslight';

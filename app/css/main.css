@@ -8,11 +8,11 @@ body {
   color: #4a545d;
 }
 
-/**footer vniz*/
+
 .wrapper {
   position: relative;
   min-height: 100%;
-  min-width: 970px;
+  min-width: 90%;
   height: auto!important;
   /*overflow: hidden;*/
 }
@@ -21,26 +21,35 @@ body {
   height: 80px;
   display: block;
 }
+
+/**Footer bottom*/
 .page-footer {
-  min-width: 970px;
+  min-width: 90%;
   height: 80px;
   margin-top: -60px;
 }
-/**footer vniz prikreplen*/
 
-/**header nachalo*/
+/**Header*/
 .container-big {
   max-width: 1200px;
-  min-width: 960px;
+  min-width: 90%;
   height: 100%;
   margin: 0 auto;
   position: relative;
 }
 .headers{
   height: 120px;
-  background: url(../images/bg_head2.png) bottom center repeat-x;
+  background: #eff3f7;
   position: relative;
   margin-bottom: 39px;
+}
+.headers:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background: url("../images/bg_head.png") bottom center repeat-x;
 }
 .headers .header-logo {
   position: relative;
@@ -60,8 +69,8 @@ body {
 .socials-link {
   display: block;
   width: 47px;
-	height: 47px;
-	margin-left: 20px;
+  height: 47px;
+  margin-left: 20px;
   margin-top: 20px;
 }
 .vk {
@@ -104,14 +113,12 @@ body {
     background-position: -516px -329px;
     cursor: pointer;
 }
-/**block soc ikonok konec*/
 
-/**Saidbar*/
+/**Sidebar*/
 .sidebar {
-  width: 250px;
+  width: 27%;
   float: left;
 }
-/**navigation menu*/
 .navigation {
   overflow: hidden;
   background: #eff3f7;
@@ -130,7 +137,6 @@ body {
 .navigation .navigation-item:first-child {
   border-top: none;
 }
-/**navigation tekuchii punkt menu*/
 .navigation .navigation-item.current {
   background: #3ba8c0;
   margin: 0;
@@ -142,7 +148,6 @@ body {
   color: #f9fafb;
   font-size: 22px;
 }
-/**navigaciya tekuchii punkt menu konec*/
 .navigation .navigation-link {
   font-family: 'fira_sansbook';
   display: block;
@@ -155,10 +160,10 @@ body {
 .navigation .navigation-link:hover {
   color: #3ba8c0;
 }
-/**navigation-menu konec*/
-/**contacts - nachalo*/
+
+/**Contacts*/
 .contacts {
-  width: 250px;
+  width: 100%;
   float: left;
 }
 .infa {
@@ -228,18 +233,27 @@ a:hover {
   background: #51daf8;
   border-radius: 0 0 4px 4px;
 }
-/**contacts - konec*/
-/**glavnaya oblast*/
+
+/**Content*/
 .variable-content {
-  width: 650px;
+  width: 67%;
   float: right;
 }
-/**footer*/
+
+/**Footer*/
 .page-footer {
-  background: url(../images/bg_footer2.png);
+  background: #eff3f7;
   font-family: 'fira_sanslight';
   color: #4a545d;
   height: 80px;
+}
+.page-footer:before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background: url("../images/bg_footer.png") bottom center repeat-x;
 }
 .page-footer .container {
   padding-top:26px;
@@ -251,7 +265,7 @@ a:hover {
   text-align: center;
   font-size: 13px;
 }
-/**vhod v admin-panel*/
+/**Login admin-panel*/
 .page-footer .lock {
   position: absolute;
   top: 27px;
@@ -265,16 +279,16 @@ a:hover {
   line-height: 1.6;
   color: #4a545d;
   text-decoration: none;
-  background: url(../images/lock-zak2.png) no-repeat;
+  background: url(../images/lock-close.png) no-repeat;
   padding-left: 24px;
 }
 .lock .lock-inner:hover {
   text-decoration: underline;
-  background: url(../images/lock-otk2.png) no-repeat;
+  background: url(../images/lock-open.png) no-repeat;
 }
-/**obchie klasses*/
+
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 .pull-left {
@@ -292,5 +306,3 @@ a:hover {
 .container:after, .clearfix:after {
   clear: both;
 }
-/**clearfix - konec*/
-/**obchie klasses - konec*/
