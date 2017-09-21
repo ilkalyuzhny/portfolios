@@ -157,8 +157,35 @@
     .info_block {
         margin: 0 0 0 30px;
     }
+    .submit-block {
+        float: none;
+    }
+    .button.otpravka {
+        margin-right: 0;
+        width: 100%;
+    }
+    .reset-block {
+        float: none;
+        margin-top: 15px;
+    }
+    .button.clear {
+        width: 100%;
+    }
 }
 
+@media (max-width: 425px) {
+    .forma-obrat {
+        padding: 58px 85px 200px 85px;
+    }
+    .block-code {
+        display: block;
+        width: 212px;
+    }
+    .aboutbox-header-obrat {
+        padding: 28px 60px;
+    }
+}
+    
 @media (max-width: 360px) {
     .soc-buttons {
         margin: 25px auto;
@@ -186,6 +213,14 @@
     }
     .obrazovan.kurs {
         background-position: 22px 26px;
+    }
+    
+    .forma-obrat {
+        padding: 58px 75px 200px 75px;
+    }
+    .aboutbox-header-obrat {
+        font-size: 20px;
+        padding: 24px 60px;
     }
 }
 
